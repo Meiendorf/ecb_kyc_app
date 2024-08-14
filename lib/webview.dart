@@ -77,8 +77,10 @@ class _WebViewState extends State<WebView> {
 
   @override
   Widget build(BuildContext context) {
-    return WebViewWidget(
-      controller: controller,
+    return SafeArea(
+      child: WebViewWidget(
+        controller: controller,
+      ),
     );
   }
 }
